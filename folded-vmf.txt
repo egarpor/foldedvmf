@@ -1,0 +1,123 @@
+## Figure 1: limits of the vMF ratio kappa* / kappa0
+Boundary mu0: 1.47 (p = 3), 1.47 (p = 5), 1.55 (p = 10); mu0 = e_j: 2.75
+
+## Figure 2: samples, direction parameters, and modes on S^2_+
+kappa = 10, mu = (0.200, 0.450, 0.870): xi^2 = (4.0, 20.3, 75.7), lambda_m = 9.7
+kappa = 20, mu = (0.200, 0.450, 0.870): xi^2 = (16.0, 81.0, 302.9), lambda_m = 19.6
+kappa = 50, mu = (0.200, 0.450, 0.870): xi^2 = (100.1, 506.6, 1893.4), lambda_m = 49.9
+kappa = 10, mu = (0.320, 0.741, 0.591): xi^2 = (10.3, 54.9, 34.9), lambda_m = 9.6
+kappa = 20, mu = (0.320, 0.741, 0.591): xi^2 = (41.0, 219.5, 139.5), lambda_m = 19.9
+kappa = 50, mu = (0.320, 0.741, 0.591): xi^2 = (256.5, 1371.6, 871.9), lambda_m = 50.0
+
+## Figure 3: vMF+ region against the naive and renormalized vMF caps
+mu = (0.992, 0.100, 0.070), kappa = 5: mode = (1.000, 0.000, 0.000); vMF+ probability of the naive cap = 0.615, of the renormalized cap = 0.537; renormalized cap area = 1.11 x R_alpha
+mu = (0.200, 0.450, 0.870), kappa = 5: mode = (0.000, 0.271, 0.963); vMF+ probability of the naive cap = 0.718, of the renormalized cap = 0.516; renormalized cap area = 1.11 x R_alpha
+mu = (0.577, 0.577, 0.577), kappa = 2: mode = (0.577, 0.577, 0.577); vMF+ probability of the naive cap = 0.977, of the renormalized cap = 0.437; renormalized cap area = 0.87 x R_alpha
+
+## Text corpora and compositional data
+Table 1 (n, p, zeros):
+        data     n     p zeros
+        tr11   414  6429  95.6
+        tr31   927 10128  97.3
+         re0  1504  2886  98.2
+         k1a  2340 21839  99.3
+     cranmed  2431 31720  99.8
+        fbis  2463  2000  92.0
+         la2  3075 19692  99.2
+     reviews  4069 36746  99.5
+        new3  9558 70822  99.7
+      ohscal 11162 11465  99.5
+    oribatid    70    35  56.8
+        efsa    87    20   5.1
+      LPdata    96    15   6.1
+         HIV   155    60  34.8
+    swapdiat   167   277  81.5
+  enterotype   280   553  67.6
+   piosphere   378    87  82.4
+    oliveoil   572     8   1.2
+    perthi02   904    20   1.5
+   atlas1006  1006   125  17.9
+         Aar    87    10   0.0
+  presid2002    94    16   0.0
+     mafragh    97     3   0.0
+    RBGlass2   105    11   0.0
+ ageCatWorld   195     3   0.0
+   Hydrochem   485    14   0.0
+       humus   617    35   0.0
+  trondelagO   756    53   0.0
+       Crohn   975    48   0.0
+       gemas  2108    18   0.0
+
+Table 2 (K, log-likelihood/n gain of MvMF+, plug-in and conformal regions):
+        data  K  d_MvMF d_MrvMF    C    R     C_R  Cp_R  cf_C  cf_R  cf_C_R
+        tr11  4  4361.2   425.6 84.9 86.7  1882.8 109.6  94.0  92.8  1874.9
+        tr31  8  6913.0   592.4 80.5 83.8  2974.2 164.6  93.5  96.8  2982.0
+         re0 16  1974.1   200.3 87.2 87.5   855.7  45.3  87.4  86.7   860.2
+         k1a 16 15045.7   931.2 87.1 86.4  6525.4 259.5  93.8  93.6  6523.9
+     cranmed  8 21950.8   657.9 84.7 84.8  9529.2  93.8  94.2  94.2  9523.8
+        fbis 24  1325.4   270.9 84.6 85.4   581.3  35.7  87.2  88.8   577.8
+         la2 16 13567.2   825.8 83.5 83.9  5879.0 247.8  92.7  92.2  5877.6
+     reviews 24 25371.0  1250.9 85.9 85.9 11029.1 245.9  90.3  89.6 11027.9
+        new3 64 48952.8  1402.2 86.0 85.8 21289.3 602.0  91.2  91.2 21300.9
+      ohscal 32  7911.0   369.5 87.7 87.5  3439.4  74.8  88.7  88.5  3442.3
+    oribatid  6    15.0     5.3 71.4 64.3     7.6   2.3  92.9  92.9     6.9
+        efsa  8     1.5     0.4 64.7 64.7     0.8   0.0  94.1  94.1     1.9
+      LPdata  8     1.2     0.6 94.7 97.4     0.9   0.1  78.9  78.9     0.8
+         HIV  4    21.4     8.3 79.0 77.4    10.0   3.2  96.8  93.5    11.9
+    swapdiat  6   163.7    33.7 65.2 68.2    68.7   6.6  90.9  90.9    73.9
+  enterotype 12   342.0   120.5 80.4 80.4   156.8   6.7  94.6  94.6   156.4
+   piosphere 24    52.5     9.2 78.3 71.7    23.8   4.5  89.5  90.8    24.2
+    oliveoil 12     0.1     0.1 87.3 87.3     0.1   0.1  96.5  97.4     0.2
+    perthi02 16     0.2     0.1 89.0 89.2     0.1   0.0  95.0  94.5     0.2
+   atlas1006 24    38.5     9.4 85.1 84.8    19.6   3.4  88.1  87.1    20.3
+         Aar  8     0.0     0.0 82.4 82.4     0.0   0.0  94.1  94.1     0.1
+  presid2002  8     0.0     0.0 60.5 60.5     0.0   0.0  89.5  89.5     0.0
+     mafragh  3     0.0     0.0 84.2 84.2     0.0   0.0  84.2  84.2     0.0
+    RBGlass2  6     0.0     0.0 83.3 83.3     0.0   0.0 100.0 100.0     0.0
+ ageCatWorld  6     0.0     0.0 79.5 79.5     0.0   0.0  97.4  97.4     0.0
+   Hydrochem 24     1.7     0.3 81.4 84.5     0.9   0.1  87.6  83.5     1.3
+       humus 24     9.6     3.0 87.0 87.0     5.6   1.4  91.1  90.2     5.9
+  trondelagO 32    20.9     5.7 83.1 83.4    10.5   1.9  86.1  84.1    10.9
+       Crohn 16    19.3     7.1 87.7 85.9     9.8   3.2  91.3  89.7     9.4
+       gemas 64     2.1     0.8 86.0 85.4     1.6   0.5  92.2  92.4     1.8
+ cf_Cp_R
+    87.0
+    95.1
+    45.7
+   233.4
+    45.1
+    26.5
+   203.5
+   174.7
+   532.3
+    66.8
+     0.7
+     0.5
+     0.3
+     2.3
+     3.8
+     4.0
+     1.4
+     0.0
+     0.2
+     3.3
+     0.0
+     0.0
+     0.0
+    -0.1
+     0.0
+     0.5
+     1.4
+     2.0
+     2.7
+     0.5
+movMF runs excluded: 364 of 6125, 345 ending in an error and 19 with kappa > 1e10; fits capped at 2000 iterations: movMF 0, MvMF+ 0
+
+Text: gain over MrvMF 200 to 1402; forced_gain: 10 of 10
+Zeros: gain 0.1 to 120.5; forced_gain: 7 of 10
+Zero-free: gains Aar 0.0, presid2002 0.0, mafragh 0.0, RBGlass2 0.0, ageCatWorld 0.0, Hydrochem 0.3, humus 3.0, trondelagO 5.7, Crohn 7.1, gemas 0.8; forced_gain anywhere: FALSE
+Text: p log10(2) from 602 to 21320
+Plug-in: coverage 80.5 to 87.7 in the text corpora, 60.5 to 97.4 in the compositions; text log10 C/R 581.3 to 21289.3, C+/R 35.7 to 602.0; compositions largest C+/R 6.7 (enterotype), |C+/R| < 0.1 in efsa -0.05, LPdata 0.10, oliveoil 0.05, perthi02 0.04, Aar -0.04, presid2002 0.00, mafragh 0.00, RBGlass2 -0.00, ageCatWorld -0.00 (within 26%)
+Plug-in: text C+/R per dimension, rho = 1.0068 to 1.0420
+Conformal: coverage 86.7 to 96.8 in the text corpora, 78.9 to 100.0 in the compositions; text log10 C/R 577.8 to 21300.9, C+/R 26.5 to 532.3; compositions largest C+/R 4.0 (enterotype), |C+/R| < 0.1 in oliveoil 0.03, Aar -0.01, presid2002 0.03, mafragh -0.00, RBGlass2 -0.08, ageCatWorld 0.01 (within 21%)
+Conformal: text C+/R per dimension, rho = 1.0033 to 1.0372
